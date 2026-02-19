@@ -1,0 +1,40 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+//storing multiple strings in array
+
+int main(){
+    int a,size;
+
+printf("Enter the total no.of strings to be printed     :       ");
+scanf("%d",&a);
+
+printf("Enter the total size     :       ");
+scanf("%d",&size);
+
+
+    char **arr = (char **)malloc(a * sizeof(char *));
+    
+    for(int i=0;i<a;i++)
+    {
+
+        arr[i] = (char *)malloc(size * sizeof(char));
+        scanf("%s",arr[i]);
+    }
+
+    for(int i=0;i<a;i++)
+    
+    {
+        printf("%s",arr[i]);
+
+    }
+
+
+    for(int i=0;i<a;i++){
+        free(arr[i]);
+    }
+    free(arr);
+
+return 0;
+
+}
