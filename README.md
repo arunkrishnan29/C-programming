@@ -1,2 +1,2 @@
 # C-programming
-Learning and Implementing programs using C programming language
+Learning and Implementing Programs Using the C Programming Language
