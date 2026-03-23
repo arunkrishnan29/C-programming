@@ -28,7 +28,6 @@ void printList(Node* node) {
     printf("null\n");
 }
 
-
 int main() {
 int a,b,c,d,e;
 
